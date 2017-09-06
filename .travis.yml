@@ -17,6 +17,6 @@ deploy:
     secure: fjabKZ+pPGAbCZGkgLoaozlW0oyyRn7Ri+63r3gTGhqxkQ0mfLoqhBnbCRUo6c2EAUmMB2i3XGQgKRN4Y9w7gnJF44OeUqSHOrLvKYWw/fW5sDcp1wGJ2RwsMEfFrSgkw0vwecxsarUoQCzLnR6eGxlxLcKd2oAle2G18kKFPr1t35buzqzqVdLE+knApndWswZyWyz0hFT83EIFIbvA4yQBNUxBGGmpiKUbPZsa+2INPxnXJbAxJZXvoU2MlRxjSWbK7dGSdgYrf6zEhuUksbklisEniBPTwzMi0VjOT6oSGg03uHKvS3WRk9NIg7LHgnvI4fqMQoQqT9QEV95UqS+YpqqTRMwz4A8ZgKeuxRFJiY8tROuzdg8rH2Ay+ykDX021a0+SknUvIJdDKLqIxQtZT1DWObvRrVMKmZdzmggeWKAlzd+h44fOUSd2oZlmdcg2Cu9+FVej8r1eFVVP/KhfMKB8z+qmY0gJ/HFhosiKCRvBM1Oth1Pcp9jy9H0ioaQxAhggK550du1vGXXMxBtfEkcCkezMdDuMvGASaB0a+rJKxJRobuVYc2frN2HhZt+VxRe4hNBPWmtAKZtcN7CgyNo1OHotnp23x0BlzYFdF+hZxkIj2hgCgQGCnAG/nVJw0jJSB0/0TpNwFcwoQdRsUZgLMtK/WFJ04dqSn4A=
   app: ancient-hamlet-42126
   on:
-    repo: ndmanvar/sentry_demo
+    repo: ndmanvar/sentry-demo
 before_deploy:
 - ls . && printenv && hostname && make release
