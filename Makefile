@@ -7,9 +7,7 @@ VERSION=`sentry-cli releases propose-version`
 release: create_release set_release_context upload_sourcemaps
 
 create_release:
-	echo "VERSION is $(VERSION)"
 	sentry-cli releases new -p $(SENTRY_PROJECT) $(VERSION)
-	git log -n 5
 	sentry-cli releases set-commits --auto $(VERSION)
 
 upload_sourcemaps:
@@ -23,4 +21,3 @@ set_release_context:
 		-H "Content-Type: application/json" \
 		-H "Accept: application/vnd.heroku+json; version=3" \
 		-H "Authorization: Bearer $(HEROKU_AUTH_TOKEN)"
-	
