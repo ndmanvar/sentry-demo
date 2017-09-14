@@ -19,4 +19,4 @@ deploy:
   on:
     repo: ndmanvar/sentry-demo
 before_deploy:
-- ls . && printenv && hostname && make release
+- make release
