@@ -22,4 +22,5 @@ upload_sourcemaps:
 		$(VERSION) upload-sourcemaps build/static/js
 
 deploy: setup_release
+	heroku config:set REACT_APP_RELEASE=$(VERSION)
 	git push heroku master
