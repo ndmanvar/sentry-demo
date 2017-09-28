@@ -5,7 +5,7 @@
 
 Hosted at [https://sentry-react-demo.herokuapp.com/](https://sentry-react-demo.herokuapp.com/)
 
-# Summary
+# Goal/Summary
 Show how Sentry works
 - Import/Integrate
 - Configuration
