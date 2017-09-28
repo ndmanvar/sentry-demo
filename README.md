@@ -3,7 +3,7 @@
 
 [![Travis Status](https://travis-ci.org/ndmanvar/sentry-demo.svg?branch=master)](https://travis-ci.org/ndmanvar/sentry-demo)
 
-Hosted at [ancient-hamlet-42126.herokuapp.com](https://ancient-hamlet-42126.herokuapp.com)
+Hosted at [https://sentry-react-demo.herokuapp.com/](https://sentry-react-demo.herokuapp.com/)
 
 # Summary
 Show how Sentry works
