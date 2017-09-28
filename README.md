@@ -10,3 +10,5 @@ Show how Sentry works
 - Import/Integrate
 - Configuration
 - Releases/SourceMaps
+
+## More information to come
