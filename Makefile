@@ -19,7 +19,7 @@ build_app:
 
 upload_sourcemaps:
 	sentry-cli releases -o $(SENTRY_ORG) -p $(SENTRY_PROJECT) files \
-		$(VERSION) upload-sourcemaps build/static/js
+		$(VERSION) upload-sourcemaps build/static/js/*.js.map
 
 deploy: setup_release
 	heroku config:set REACT_APP_RELEASE=$(VERSION)
