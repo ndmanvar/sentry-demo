@@ -19,4 +19,4 @@ deploy:
   on:
     repo: ndmanvar/sentry-react-demo
 before_deploy:
-- make setup_release set_config
+- make setup_release set_release_context
