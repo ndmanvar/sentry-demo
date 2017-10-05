@@ -1,6 +1,6 @@
 # Sentry JS-React Demo
 
-[![Travis Status](https://travis-ci.org/ndmanvar/sentry-demo.svg?branch=master)](https://travis-ci.org/ndmanvar/sentry-demo)
+[![Travis Status](https://travis-ci.org/ndmanvar/sentry-react-demo.svg?branch=master)](https://travis-ci.org/ndmanvar/sentry-react-demo)
 
 Hosted at [https://sentry-react-demo.herokuapp.com/](https://sentry-react-demo.herokuapp.com/)
 
