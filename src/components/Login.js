@@ -28,7 +28,7 @@ class Login extends Component {
 
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
+                        <label for="exampleInputEmail1">Email address:</label>
                         <input type="email" className="form-control" onChange={this.handleChange} placeholder="Enter email"/>
                         <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
