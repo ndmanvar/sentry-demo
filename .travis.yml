@@ -17,6 +17,6 @@ deploy:
     secure: gWEZl02SdxncTBYUfQbdEh/yUsIT/S7FgrqifdNdwzRPb8yuvgJYtyIOvYam4c8y8GWUZil+pL2AsSJNvyklXQ87lnX3Qvbc0Rbr1s4QzDiS9YNlBx5FqLy1OE0ydUKejfYtN3neodw6JfqxXNbHe6FX4c4nfk2MNAnkijNfeijFKVoQhDm+y/e6L+GZh0p58IaBQjtZQjlBu/O5BNSalzO1+Y5hGthEVTfLMTZp8QsloLBkN0OH7MC+ZpPYkqzWU4QmZlKbaNpQ9ruP0GqIYIK2lLEFAMBCK187BscRjksc6y82GIRGnlj6rbGGGETjKW2/RX8T1lwqLtd90hOtst6mOQqTroGlxrkjAfYo6kb3dnnEhMcyebusJAA5Em9yT4jD/VSr/QSkMIwuYyEuMsuBGvZxphX4+qVcQ0Tw5JQu+TfCa4T8j3+kxQp7QONv9SJNOG21tQsrRsXSkJzfxuufKBVgx3tBC2JOxtQwUXat3lv3YhPozzSEmvvlfMJxIx9G8DRNY/iv/J+aKcJ8jT5kWTtYRX8MdTgVSllps8q4RqNY0ZpD/AAzsptP1VCex3MMyKjeBw01jfskfwjCOVClbvwW0irZbfDSIQJXtgXMk6C4n8XMWKW34lt8KrIpSdQAvgTUph/VYDNWBnTD5lnf6jHvUJWh7HFlfRv9hFo=
   app: sentry-react-demo
   on:
-    repo: ndmanvar/sentry-demo
+    repo: ndmanvar/sentry-react-demo
 before_deploy:
-- make setup_release
+- make setup_release set_config

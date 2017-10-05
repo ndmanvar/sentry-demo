@@ -5,6 +5,7 @@
 
 SENTRY_ORG=testorg-az
 SENTRY_PROJECT=sentry-react-demo
+HEROKU_APP_ID=sentry-react-demo
 
 VERSION=`sentry-cli releases propose-version`
 
@@ -21,6 +22,12 @@ upload_sourcemaps:
 	sentry-cli releases -o $(SENTRY_ORG) -p $(SENTRY_PROJECT) files \
 		$(VERSION) upload-sourcemaps build/static/js/*.js.map
 
-deploy: setup_release
-	heroku config:set REACT_APP_RELEASE=$(VERSION)
+set_release_context:
+	curl -n -X PATCH https://api.heroku.com/apps/$(HEROKU_APP_ID)/config-vars \
+		-d "{ \"REACT_APP_RELEASE\":\"$(VERSION)\"}" \
+		-H "Content-Type: application/json" \
+		-H "Accept: application/vnd.heroku+json; version=3" \
+		-H "Authorization: Bearer $(HEROKU_AUTH_TOKEN)"
+
+deploy: set_release_context set_config
 	git push heroku master
