@@ -13,7 +13,7 @@ setup_release: build_app create_release upload_sourcemaps
 
 create_release:
 	sentry-cli releases -o $(SENTRY_ORG) new -p $(SENTRY_PROJECT) $(VERSION)
-	sentry-cli releases -o $(SENTRY_ORG) set-commits --auto $(VERSION)
+	sentry-cli releases -o $(SENTRY_ORG) -p $(SENTRY_PROJECT) set-commits --auto $(VERSION)
 
 build_app:
 	REACT_APP_RELEASE=$(VERSION) npm run build
@@ -29,5 +29,5 @@ set_release_context:
 		-H "Accept: application/vnd.heroku+json; version=3" \
 		-H "Authorization: Bearer $(HEROKU_AUTH_TOKEN)"
 
-deploy: set_release_context set_config
+deploy: setup_release set_release_context
 	git push heroku master
